@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+// Colors
+@import "components/color";
+
+// Variables;
+@import "components/variables";
+
+//custom style
+$primary-color : #e3e1e2;
+
+$navbar-font-color: rgba(0, 0, 0, 0.9);
+
+// Reset
+@import "components/normalize";
+
+// components
+@import "components/global";
+
+$link-color :#108A97;
+
+$footer-font-color: $navbar-font-color;
+
+$footer-bg-color: #e3e1e2 !important;
+
+$color-footer-social: #868e96 !important;
+
+$breadcrumb-text-color: #108A97;
+
+div.sociales a {
+  color: $color-footer-social;
+}
+
+div.sociales a :hover {
+  opacity: .8
+}
+
+.fixed-top {
+  background-repeat: repeat-x;
+  background-image: url("https://www.santafe.gob.ar/assets/standard/images/barra-header.png");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 1367px 3px;
+  background-color: #e3e1e2;
+}
+
+.breadcrumb {
+  font-size: 18px;
+  color: $breadcrumb-text-color;
+}
+
+$button-raised-background:#0c6a74;
+
+$button-floating-background-hover:#0c6a74;
+
+.btn:hover, .btn-large:hover {
+  background-color: #0c6a74;
+  opacity: 0.8;
+}
+
+//  Blockquote
+
+blockquote {
+  border-left: 5px solid $link-color;
+}
+
+
+@import "components/badges";
+@import "components/icons-material-design";
+@import "components/grid";
+@import "components/navbar";
+@import "components/roboto";
+
+// Header Styles
+$h1-fontsize: 3.2rem !default;
+$h2-fontsize: 3.56rem !default;
+$h3-fontsize: 2.92rem !default;
+$h4-fontsize: 2.28rem !default;
+$h5-fontsize: 1.64rem !default;
+$h6-fontsize: 1rem !default;
+
+// Header Styles
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h3 { font-size: $h3-fontsize; line-height: 110%; margin: ($h3-fontsize / 2) 0 ($h3-fontsize / 2.5) 0;}
+h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
+h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
+h6 { font-size: $h6-fontsize; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
+
+@import "components/typography";
+
+
+
+h1 {
+  font-size: 2.00rem;
+  color: #108A97;
+}
+
+@import "components/transitions";
+@import "components/cards";
+@import "components/toast";
+@import "components/tabs";
+@import "components/tooltip";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/waves";
+@import "components/modal";
+@import "components/collapsible";
+@import "components/chips";
+@import "components/materialbox";
+@import "components/forms/forms";
+@import "components/table_of_contents";
+@import "components/sideNav";
+@import "components/preloader";
+@import "components/slider";
+@import "components/carousel";
+@import "components/tapTarget";
+@import "components/pulse";
+@import "components/date_picker/default";
+@import "components/date_picker/default.date";
+@import "components/date_picker/default.time";
+
+$footer-bg-color: #e3e1e2 !important;
+
+.page-footer {
+  padding-top: 20px;
+  color: #fff;
+  background-color: #e3e1e2;
+}
+
+.row-top {
+  background: #e4e5e6 !important;
+}
+
+nav .brand-logo {
+  padding: 5px;
+}
+
+@media only screen and (max-width : 992px) {
+
+  #sidenav-overlay {
+    z-index: 0 !important;
+  }
+
+}
+
+
