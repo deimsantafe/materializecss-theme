@@ -98,6 +98,9 @@ h1 {
   color: #108A97;
 }
 
+$tabs-text-color: #108A97;
+$tabs-underline-color: #108A97;
+
 @import "components/transitions";
 @import "components/cards";
 @import "components/toast";
@@ -138,6 +141,10 @@ nav .brand-logo {
   padding: 5px;
 }
 
+.tabs .tab a {
+   color: rgba(16, 138, 151, 0.7)
+}
+
 @media only screen and (max-width : 992px) {
 
   #sidenav-overlay {
@@ -145,5 +152,4 @@ nav .brand-logo {
   }
 
 }
-
 
