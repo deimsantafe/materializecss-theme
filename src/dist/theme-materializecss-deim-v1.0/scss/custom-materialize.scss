@@ -15,10 +15,10 @@ $navbar-font-color: rgba(0, 0, 0, 0.9);
 // Reset
 @import "components/normalize";
 
+$link-color :#108A97 !important;
+
 // components
 @import "components/global";
-
-$link-color :#108A97;
 
 $footer-font-color: $navbar-font-color;
 
@@ -27,6 +27,7 @@ $footer-bg-color: #e3e1e2 !important;
 $color-footer-social: #868e96 !important;
 
 $breadcrumb-text-color: #108A97;
+$breadcrumb-text-color-last-child: #9C9C9C;
 
 div.sociales a {
   color: $color-footer-social;
@@ -48,6 +49,14 @@ div.sociales a :hover {
 .breadcrumb {
   font-size: 18px;
   color: $breadcrumb-text-color;
+}
+
+.breadcrumb:last-child {
+  color: $breadcrumb-text-color-last-child !important;
+}
+
+.breadcrumb:before {
+  color: inherit !important;
 }
 
 $button-raised-background:#0c6a74;
@@ -98,9 +107,6 @@ h1 {
   color: #108A97;
 }
 
-$tabs-text-color: #108A97;
-$tabs-underline-color: #108A97;
-
 @import "components/transitions";
 @import "components/cards";
 @import "components/toast";
@@ -141,10 +147,6 @@ nav .brand-logo {
   padding: 5px;
 }
 
-.tabs .tab a {
-   color: rgba(16, 138, 151, 0.7)
-}
-
 @media only screen and (max-width : 992px) {
 
   #sidenav-overlay {
@@ -152,4 +154,5 @@ nav .brand-logo {
   }
 
 }
+
 
