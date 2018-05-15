@@ -12,10 +12,11 @@ $primary-color : #e3e1e2;
 
 $navbar-font-color: rgba(0, 0, 0, 0.9);
 
+$link-color :#108A97;
+
 // Reset
 @import "components/normalize";
 
-$link-color :#108A97 !important;
 
 // components
 @import "components/global";
@@ -106,6 +107,10 @@ h1 {
   font-size: 2.00rem;
   color: #108A97;
 }
+
+
+$tabs-text-color: #108A97;
+$tabs-underline-color: #108A97;
 
 @import "components/transitions";
 @import "components/cards";
